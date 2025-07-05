@@ -1,15 +1,16 @@
 {
-  "name": "NodeSpeedtest",
+  "name": "NodeSpeedTest",
   "version": "1.0.2",
   "description": "HTML5 Speedtest with NodeJS Backend",
-  "main": "src/Speedtest.js",
+  "main": "src/SpeedTest.js",
   "repository": "https://github.com/dunklesToast/NodeSpeedtest",
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "express": "^4.16.3",
     "cors": "^2.8.5",
+    "express": "^4.16.3",
     "gps-distance": "^0.0.4",
+    "nodemon": "^3.1.10",
     "random-bytes": "^1.0.0",
     "request": "^2.85.0"
   },
@@ -18,5 +19,8 @@
       "src/public/**/*"
     ]
   },
-  "bin": "src/SpeedTest.js"
+  "bin": "src/SpeedTest.js",
+    "scripts": {
+    "start": "nodemon src/SpeedTest.js"
+  }
 }
